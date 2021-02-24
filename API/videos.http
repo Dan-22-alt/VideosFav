@@ -1,0 +1,27 @@
+@api = http://localhost:5000
+
+GET {{api}}/videos
+
+### OBTENER VIDEO
+GET {{api}}/videos/6022fb3741bf2b1574a91d2b
+
+### CREAR
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url": "2222222222",
+    "title": "dmc",
+    "description": "44"
+}
+
+### BORRAR
+DELETE  {{api}}/videos/6023005a0f0b6e0ad83cd6a0
+
+### ACTUALIZAR
+PUT  {{api}}/videos/6022fb3741bf2b1574a91d2b
+Content-Type: application/json
+
+{
+    "title": "DevilMayCry 5"
+}
